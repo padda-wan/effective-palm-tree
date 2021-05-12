@@ -1,0 +1,15 @@
+.nav {
+    display: flex;
+    justify-content: space-between;
+    border-left: 100px;
+
+    span {
+        padding: 20px;
+    }
+
+    .left {
+        padding-left: 30px;
+    }
+
+    border-bottom: 1px solid #000;
+}
