@@ -2,6 +2,7 @@
     display: flex;
     justify-content: space-between;
     border-left: 100px;
+    border-bottom: 1px solid #000;
 
     span {
         padding: 20px;
@@ -11,5 +12,16 @@
         padding-left: 30px;
     }
 
-    border-bottom: 1px solid #000;
+}
+
+// .slider {
+//     // display: flex;
+
+//     span {
+//         // flex-grow: 1;
+//     }
+
+// }
+.slider-container {
+    width: 1416px;
 }

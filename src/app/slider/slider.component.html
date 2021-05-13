@@ -1,9 +1,11 @@
 <swiper 
-    [slidesPerView]="3" 
+    [slidesPerView]="5" 
     [spaceBetween]="30" 
-    [pagination]="{clickable: true}" 
+    [navigation]="true"
+    [loop]="true"
+    [centeredSlides]="true"
     class="mySwiper">
-    <ng-template swiperSlide>Slide 1</ng-template>
+    <ng-template swiperSlide><div></div></ng-template>
     <ng-template swiperSlide>Slide 2</ng-template>
     <ng-template swiperSlide>Slide 3</ng-template>
     <ng-template swiperSlide>Slide 4</ng-template>

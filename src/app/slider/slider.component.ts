@@ -1,5 +1,7 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
+import SwiperCore, { Navigation } from "swiper/core";
 
+SwiperCore.use([Navigation])
 
 @Component({
   selector: 'app-slider',
