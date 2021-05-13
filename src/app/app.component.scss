@@ -14,14 +14,9 @@
 
 }
 
-// .slider {
-//     // display: flex;
-
-//     span {
-//         // flex-grow: 1;
-//     }
-
-// }
-.slider-container {
-    width: 1416px;
+.slider {
+    // flex seems to break swiper, use auto margins
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
 }
