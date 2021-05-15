@@ -1,13 +1,14 @@
 <swiper 
-    [slidesPerView]="5" 
-    [spaceBetween]="30" 
+    [slidesPerView]="5"
+    [spaceBetween]="24" 
     [navigation]="true"
     [loop]="true"
     [centeredSlides]="true"
+    (slideChange)="onSlideChange($event)"
     class="mySwiper">
-    <ng-template swiperSlide>Slide 1</ng-template>
-    <ng-template swiperSlide>Slide 2</ng-template>
-    <ng-template swiperSlide>Slide 3</ng-template>
-    <ng-template swiperSlide>Slide 4</ng-template>
-    <ng-template swiperSlide>Slide 5</ng-template>
+    <ng-template swiperSlide>Slide 1<div></div></ng-template>
+    <ng-template swiperSlide>Slide 2<div></div></ng-template>
+    <ng-template swiperSlide>Slide 3<div></div></ng-template>
+    <ng-template swiperSlide>Slide 4<div></div></ng-template>
+    <ng-template swiperSlide>Slide 5<div></div></ng-template>
 </swiper>

@@ -1,0 +1,48 @@
+.nav {
+    height: 80px;
+    z-index: 50;
+    span {
+        padding: 20px;
+    }
+    box-shadow: 4px 4px 4px rgba(0,0,0,0.08);
+}
+.slider {
+    z-index: -1;
+}
+.yellow {
+    height: 8px;
+    background-color: #FFC000;
+}
+.black {
+    height: 8px;
+    background-color: #000000;
+}
+.inline-icon {
+    vertical-align: -7px;
+}
+.indicator {
+    color: #FFC300;
+    font-size: 10px;
+    width: 14px;
+}
+.menu-text {
+    font-size: 12px;
+}
+.link {
+    text-decoration: none;
+    color: #000000;
+}
+.mtn-logo {
+    width: 96px;
+    border: 5px solid #FFFFFF;
+    box-shadow: 4px 4px 4px rgba(0,0,0,0.08);
+}
+div span.logo-container {
+    padding-top: 50px;
+}
+.left-content {
+    z-index: 2;
+}
+.search-icon {
+    transform: scale(0.7);
+}

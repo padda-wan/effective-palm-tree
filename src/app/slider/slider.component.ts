@@ -16,4 +16,13 @@ export class SliderComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  onSlideChange(evt: any): void {
+    console.log(evt.translate)
+    evt.updateSize()
+  }
+
+  onTransition(): void {
+    console.log('transition: ')
+  }
+
 }
