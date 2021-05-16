@@ -1,5 +1,7 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import SwiperCore, { Navigation } from "swiper/core";
+import { MatIconRegistry } from '@angular/material/icon';
+import { DomSanitizer } from '@angular/platform-browser';
 
 SwiperCore.use([Navigation])
 
@@ -11,18 +13,18 @@ SwiperCore.use([Navigation])
 })
 export class SliderComponent implements OnInit {
 
-  constructor() { }
+  public slides: string[] = [
+    "Mobile internet",
+    "Home internet",
+    "Get a device",
+    "Add a phone-line",
+    "Upgrade"
+  ]
+
+  constructor(iconRegistry: MatIconRegistry, sanitizer: DomSanitizer) { 
+    iconRegistry.addSvgIcon('img-placeholder', sanitizer.bypassSecurityTrustResourceUrl('assets/placeholder.svg'));
+  }
 
   ngOnInit(): void {
   }
-
-  onSlideChange(evt: any): void {
-    console.log(evt.translate)
-    evt.updateSize()
-  }
-
-  onTransition(): void {
-    console.log('transition: ')
-  }
-
 }

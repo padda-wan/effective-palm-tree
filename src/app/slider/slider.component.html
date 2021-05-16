@@ -4,11 +4,19 @@
     [navigation]="true"
     [loop]="true"
     [centeredSlides]="true"
-    (slideChange)="onSlideChange($event)"
     class="mySwiper">
-    <ng-template swiperSlide>Slide 1<div></div></ng-template>
-    <ng-template swiperSlide>Slide 2<div></div></ng-template>
-    <ng-template swiperSlide>Slide 3<div></div></ng-template>
-    <ng-template swiperSlide>Slide 4<div></div></ng-template>
-    <ng-template swiperSlide>Slide 5<div></div></ng-template>
+    <ng-template *ngFor="let slide of slides" swiperSlide>
+        <mat-card class="card">
+            <mat-card-content class="card-img-placeholder card-content">
+                <mat-icon svgIcon="img-placeholder" aria-hidden="false" aria-label="PLACEHOLDER" class="placeholder"></mat-icon>
+            </mat-card-content>
+            <mat-card-footer>
+                <div fxLayout="row" fxLayoutAlign="center" class="footer-copy" > 
+                    <span></span>
+                    <span class="copy">{{ slide }}</span>
+                    <span></span>
+                </div>
+            </mat-card-footer>
+        </mat-card>
+    </ng-template>
 </swiper>
