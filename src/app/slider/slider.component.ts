@@ -14,11 +14,11 @@ SwiperCore.use([Navigation])
 export class SliderComponent implements OnInit {
 
   public slides: string[] = [
-    "Mobile internet",
-    "Home internet",
     "Get a device",
     "Add a phone-line",
-    "Upgrade"
+    "Upgrade",
+    "Mobile internet",
+    "Home internet",
   ]
 
   constructor(iconRegistry: MatIconRegistry, sanitizer: DomSanitizer) { 

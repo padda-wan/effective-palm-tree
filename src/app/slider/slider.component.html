@@ -1,11 +1,16 @@
-<swiper 
+<div>
+    <span class="information">
+        What are you<br/>
+        <span class="bold"><b>here to do?</b></span>
+    </span>
+    <swiper 
     [slidesPerView]="5"
     [spaceBetween]="24" 
     [navigation]="true"
     [loop]="true"
     [centeredSlides]="true"
     class="mySwiper">
-    <ng-template *ngFor="let slide of slides" swiperSlide>
+    <ng-template *ngFor="let slide of slides" swiperSlide let-data>
         <mat-card class="card">
             <mat-card-content class="card-img-placeholder card-content">
                 <mat-icon svgIcon="img-placeholder" aria-hidden="false" aria-label="PLACEHOLDER" class="placeholder"></mat-icon>
@@ -13,10 +18,21 @@
             <mat-card-footer>
                 <div fxLayout="row" fxLayoutAlign="center" class="footer-copy" > 
                     <span></span>
-                    <span class="copy">{{ slide }}</span>
+                    <span class="copy">
+                        <div>
+                            {{ slide }}
+                        </div>
+                        <div class="copy-cta">
+                            <a href="#" target="_blank" class="link">
+                                START HERE <mat-icon class="chevron">chevron_right</mat-icon>
+                            </a>
+                        </div>
+                    </span>
                     <span></span>
                 </div>
+                <div class="yellow-border"></div>
             </mat-card-footer>
         </mat-card>
     </ng-template>
 </swiper>
+</div>
